@@ -1,0 +1,89 @@
+/* Profile.css */
+
+.profile-container {
+    background-color: #e0f7fa; /* light seafoam green background */
+    color: #00796b; /* dark seafoam green text */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-parent {
+    background-color: #006064; /* aqua blue background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-details .colz a {
+    color: #80deea; /* lighter aqua blue for icons */
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.profile-details .colz a:hover {
+    color: #b2ebf2; /* even lighter aqua blue on hover */
+}
+
+.profile-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts the space between the text and the image */
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px; /* Space between text and picture */
+}
+
+.profile-details-name .primary-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0f7fa; /* seafoam green for highlighted text */
+}
+
+.highlighted-text {
+    color: #e0f7fa; /* seafoam green for highlighted text */
+}
+
+.profile-details-role .primary-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #e0f7fa; /* seafoam green for role text */
+}
+
+.profile-picture {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    margin-left: 20px;
+}
+
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff; /* Optional: add a border */
+}
+
+.profile-details-para .secondary-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #b2dfdb; /* lighter seafoam green for paragraph text */
+}
+
+.profile-details-para p {
+    margin: 0;
+}

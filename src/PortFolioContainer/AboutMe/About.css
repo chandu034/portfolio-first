@@ -1,0 +1,141 @@
+/* About.css */
+
+.about-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.skills-section, .experience-section {
+    margin-bottom: 40px;
+}
+
+.skills-section h2, .experience-section h2 {
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 10px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #006064;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-category ul li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.experience-card {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00796b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #006064;
+}
+
+.experience-card h4 {
+    font-size: 1.2rem;
+    color: #004d40;
+    margin-bottom: 5px;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.about-container {
+    padding: 20px;
+    background-color: #f0f4f8; /* Light gray background for contrast */
+}
+
+.skills-section, .experience-section {
+    margin-bottom: 40px;
+}
+
+.skills-section h2, .experience-section h2 {
+    font-size: 2rem;
+    color: #00796b; /* Seafoam green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-category {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #004d40; /* Darker green for headings */
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1rem;
+    color: #333333;
+    margin: 5px 0;
+}
+
+.experience-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #004d40; /* Darker green for role title */
+    margin-bottom: 10px;
+}
+
+.experience-card h4 {
+    font-size: 1.2rem;
+    color: #00796b; /* Seafoam green for company name */
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

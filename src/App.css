@@ -6,6 +6,8 @@
   height: 40vmin;
   pointer-events: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +37,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.body {
+  font-family: 'Baskervville SC', serif;
+}
+.navbar-brand {
+  font-family: 'Baskervville SC', serif;
+}
+
+.profile-details-name .primary-text {
+  font-family: 'Baskervville SC', serif;
+}
+
+.about-container h2, .about-container h3 {
+  font-family: 'Baskervville SC', serif;
 }

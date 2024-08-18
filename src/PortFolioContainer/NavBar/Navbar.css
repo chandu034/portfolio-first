@@ -1,0 +1,159 @@
+.navbar {
+    background-color: #20B2AA; /* Seafoam Green */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF; /* White text for contrast */
+  }
+  
+  .navbar a {
+    color: #00FFFF; /* Aqua Blue */
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .navbar a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF; /* White for the brand/logo */
+  }
+  /* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00796b;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #004d40;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #004d40;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #00796b;
+}
+
+.navbar-links a:hover + .dropdown-content,
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-links a:active {
+  background-color: #00695c;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #004d40;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 1000;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  .navbar-links a {
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .dropdown-content {
+      position: static;
+      box-shadow: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+      color: #fff;
+      font-size: 2rem;
+  }
+}
+.navbar-brand {
+  font-family: 'Baskervville SC', serif;
+}
+
+.profile-details-name .primary-text {
+  font-family: 'Baskervville SC', serif;
+}
+
+.about-container h2, .about-container h3 {
+  font-family: 'Baskervville SC', serif;
+}
+
