@@ -1,38 +1,39 @@
-import {useEffect, useState} from 'react';
-import './Profile.css'
+import { useEffect, useState } from 'react';
+import './Profile.css';
 import profilePicture from '../../images/profile.jpg';
 
-function Profile(){
+function Profile() {
     const roles = ["Web Developer", "Software Engineer", "UI/UX Designer", "React Developer"];
     const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-        }, 2000); // 5000ms = 5 seconds
+        }, 2000); // 2000ms = 2 seconds
 
         // Cleanup the interval on component unmount
         return () => clearInterval(intervalId);
     }, [roles.length]);
-    return(
+
+    return (
         <div className='profile-container'>
             <div className='profile-parent'>
                 <div className='profile-details'>
                     <div className='colz'>
-                        <a href='#'>
-                            <i className='fa fa-facebook-square'></ i>
+                        <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
+                            <i className='fa fa-facebook-square'></i>
                         </a>
-                        <a href='#'>
-                            <i className='fa fa-google-plus-square'></ i>
+                        <a href='https://plus.google.com' target='_blank' rel='noopener noreferrer'>
+                            <i className='fa fa-google-plus-square'></i>
                         </a>
-                        <a href='#'>
-                            <i className='fa fa-instagram'></ i>
+                        <a href='https://www.instagram.com' target='_blank' rel='noopener noreferrer'>
+                            <i className='fa fa-instagram'></i>
                         </a>
-                        <a href='https://www.youtube.com/@TeluguPandaa'>
-                            <i className='fa fa-youtube-square'></ i>
+                        <a href='https://www.youtube.com/@TeluguPandaa' target='_blank' rel='noopener noreferrer'>
+                            <i className='fa fa-youtube-square'></i>
                         </a>
-                        <a href='#'>
-                            <i className='fa fa-twitter'></ i>
+                        <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+                            <i className='fa fa-twitter'></i>
                         </a>
                     </div>
                     <div className='profile-info-container'>
@@ -62,6 +63,7 @@ function Profile(){
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
 export default Profile;
